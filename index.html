@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Complaint Registration</title>
+
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Online Complaint Registration</h1>
+
+<div class="container">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email Address">
+
+    <select id="type">
+        <option value="">Select Complaint Type</option>
+        <option>Electricity</option>
+        <option>Water</option>
+        <option>Internet</option>
+        <option>Road</option>
+        <option>Drainage</option>
+        <option>Street Light</option>
+        <option>Garbage</option>
+        <option>Land Issue</option>
+        <option>Property Tax</option>
+        <option>Sewage Problem</option>
+        <option>Noise Pollution</option>
+        <option>Other</option>
+    </select>
+
+    <textarea id="message" placeholder="Describe your complaint"></textarea>
+
+    <button onclick="addComplaint()">Submit Complaint</button>
+</div>
+
+<h2>Total Complaints: <span id="count">0</span></h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Complaint</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="complaintList"></tbody>
+</table>
+
+<!-- JavaScript file link -->
+<script src="script.js"></script>
+
+</body>
+</html>
